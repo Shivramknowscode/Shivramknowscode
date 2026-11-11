@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="840" height="320" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Hi, I'm Shiv. Senior Product Manager at Curebase, designer, and founder of Latice Design.</title>
+  <desc id="hero-desc">An animated banner. A headline types itself out while a cursor sketches a wireframe that turns into a dashboard showing a 45 percent lift in flow completion.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#171C3A"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF8A6B"/>
+      <stop offset="1" stop-color="#FF5A3C"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" opacity="0.06"/>
+    </pattern>
+    <clipPath id="card">
+      <rect width="840" height="320" rx="20"/>
+    </clipPath>
+    <clipPath id="typing">
+      <rect x="48" y="84" height="60" width="312">
+        <animate attributeName="width" dur="12s" repeatCount="indefinite" calcMode="discrete"
+          values="0;24;48;72;96;120;144;168;192;216;240;264;288;312;0"
+          keyTimes="0;0.01;0.02;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.11;0.12;0.13;0.97"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .fb   { transform-box: fill-box; }
+
+    .caret { animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+
+    .role { opacity: 0; animation: role 12s linear infinite; }
+    .role.r1 { opacity: 1; }
+    .role.r2 { animation-delay: 4s; }
+    .role.r3 { animation-delay: 8s; }
+    @keyframes role { 0% { opacity: 0; } 3% { opacity: 1; } 30% { opacity: 1; } 33.3% { opacity: 0; } 100% { opacity: 0; } }
+
+    .chip { animation: bob 3.2s ease-in-out infinite; }
+    .chip.c2 { animation-delay: .25s; }
+    .chip.c3 { animation-delay: .5s; }
+    .chip.c4 { animation-delay: .75s; }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+
+    .float { animation: drift 9s ease-in-out infinite; transform-origin: center; }
+    .float.f2 { animation-duration: 11s; animation-delay: -3s; }
+    .float.f3 { animation-duration: 13s; animation-delay: -6s; }
+    @keyframes drift { 0%, 100% { transform: translate(0, 0) rotate(0deg); } 50% { transform: translate(6px, -10px) rotate(18deg); } }
+
+    .scene { animation: scene 12s linear infinite; }
+    @keyframes scene { 0% { opacity: 0; } 3% { opacity: 1; } 95% { opacity: 1; } 100% { opacity: 0; } }
+
+    .wire { fill: none; stroke: #5EEAD4; stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: round;
+            stroke-dasharray: 1; stroke-dashoffset: 0; animation: draw 12s ease-out infinite; }
+    .wire.w2 { animation-delay: .25s; }
+    .wire.w3 { animation-delay: .5s; }
+    .wire.w4 { animation-delay: .75s; }
+    @keyframes draw { 0% { stroke-dashoffset: 1; opacity: 1; } 16% { stroke-dashoffset: 0; opacity: 1; } 30% { opacity: 1; } 40% { opacity: .35; } 100% { stroke-dashoffset: 0; opacity: .35; } }
+
+    .bar { transform-origin: 50% 100%; animation: grow 12s cubic-bezier(.2, .9, .3, 1.2) infinite; }
+    .bar.b2 { animation-delay: .12s; }
+    .bar.b3 { animation-delay: .24s; }
+    .bar.b4 { animation-delay: .36s; }
+    .bar.b5 { animation-delay: .48s; }
+    .bar.b6 { animation-delay: .6s; }
+    @keyframes grow { 0%, 26% { transform: scaleY(0); } 38% { transform: scaleY(1); } 100% { transform: scaleY(1); } }
+
+    .spark { fill: none; stroke: #5EEAD4; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+             stroke-dasharray: 1; stroke-dashoffset: 0; animation: spark 12s ease-out infinite; }
+    @keyframes spark { 0%, 42% { stroke-dashoffset: 1; } 56% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 0; } }
+
+    .pop { transform-origin: 0% 100%; animation: pop 12s ease-out infinite; }
+    @keyframes pop { 0%, 54% { opacity: 0; transform: scale(.6); } 58% { opacity: 1; transform: scale(1.1); } 61% { transform: scale(1); } 100% { opacity: 1; transform: scale(1); } }
+
+    .ripple { transform-origin: center; opacity: 0; animation: ripple 12s ease-out infinite; }
+    @keyframes ripple { 0%, 66% { opacity: 0; transform: scale(.2); } 68% { opacity: .9; } 76% { opacity: 0; transform: scale(2.6); } 100% { opacity: 0; transform: scale(2.6); } }
+
+    .live { animation: live 1.6s ease-in-out infinite; }
+    @keyframes live { 0%, 100% { opacity: 1; } 50% { opacity: .25; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="840" height="320" fill="url(#bg)"/>
+    <rect width="840" height="320" fill="url(#dots)"/>
+
+    <!-- drifting shapes -->
+    <circle class="float fb" cx="430" cy="52" r="7" fill="none" stroke="#FDE047" stroke-width="2" opacity=".7"/>
+    <rect class="float f2 fb" x="452" y="250" width="12" height="12" rx="2" fill="none" stroke="#5EEAD4" stroke-width="2" opacity=".6"/>
+    <path class="float f3 fb" d="M400 150 l8 14 h-16 z" fill="none" stroke="#FF6B4A" stroke-width="2" stroke-linejoin="round" opacity=".7"/>
+
+    <!-- left column -->
+    <text class="mono" x="48" y="66" font-size="14" fill="#5EEAD4">$ whoami</text>
+
+    <g clip-path="url(#typing)">
+      <text class="mono" x="48" y="128" font-size="40" font-weight="700" fill="#FFFFFF" textLength="312" lengthAdjust="spacing">Hi, I'm Shiv.</text>
+    </g>
+    <rect class="caret" x="364" y="94" width="4" height="40" fill="#FF6B4A">
+      <animate attributeName="x" dur="12s" repeatCount="indefinite" calcMode="discrete"
+        values="52;76;100;124;148;172;196;220;244;268;292;316;340;364;52"
+        keyTimes="0;0.01;0.02;0.03;0.04;0.05;0.06;0.07;0.08;0.09;0.10;0.11;0.12;0.13;0.97"/>
+    </rect>
+
+    <g class="sans" font-size="18" font-weight="600">
+      <text class="role r1" x="48" y="176" fill="#C7D2FE">Senior Product Manager @ Curebase</text>
+      <text class="role r2" x="48" y="176" fill="#FDE047">Designer who ships</text>
+      <text class="role r3" x="48" y="176" fill="#FF8A6B">Founder, Latice Design</text>
+    </g>
+
+    <g class="sans" font-size="13" fill="#8B93B8">
+      <circle cx="54" cy="204" r="4" fill="none" stroke="#8B93B8" stroke-width="1.5"/>
+      <circle cx="54" cy="204" r="1.2" fill="#8B93B8"/>
+      <text x="68" y="209">Lower East Side, NYC</text>
+    </g>
+
+    <g class="sans" font-size="12" font-weight="600">
+      <g class="chip">
+        <rect x="48" y="238" width="74" height="28" rx="14" fill="#FF6B4A" fill-opacity=".14" stroke="#FF6B4A" stroke-opacity=".6"/>
+        <text x="85" y="256" text-anchor="middle" fill="#FF8A6B">Product</text>
+      </g>
+      <g class="chip c2">
+        <rect x="132" y="238" width="68" height="28" rx="14" fill="#5EEAD4" fill-opacity=".12" stroke="#5EEAD4" stroke-opacity=".6"/>
+        <text x="166" y="256" text-anchor="middle" fill="#5EEAD4">Design</text>
+      </g>
+      <g class="chip c3">
+        <rect x="210" y="238" width="84" height="28" rx="14" fill="#FDE047" fill-opacity=".1" stroke="#FDE047" stroke-opacity=".6"/>
+        <text x="252" y="256" text-anchor="middle" fill="#FDE047">Analytics</text>
+      </g>
+      <g class="chip c4">
+        <rect x="304" y="238" width="44" height="28" rx="14" fill="#C7D2FE" fill-opacity=".1" stroke="#C7D2FE" stroke-opacity=".6"/>
+        <text x="326" y="256" text-anchor="middle" fill="#C7D2FE">AI</text>
+      </g>
+    </g>
+
+    <!-- right column: sketch turns into dashboard -->
+    <rect x="500" y="44" width="292" height="232" rx="14" fill="#0F1530" stroke="#2A3360"/>
+    <circle cx="518" cy="62" r="4" fill="#FF6B4A"/>
+    <circle cx="532" cy="62" r="4" fill="#FDE047"/>
+    <circle cx="546" cy="62" r="4" fill="#5EEAD4"/>
+    <circle class="live" cx="772" cy="62" r="3" fill="#5EEAD4"/>
+    <text class="mono" x="764" y="66" font-size="10" fill="#8B93B8" text-anchor="end">live</text>
+    <line x1="500" y1="78" x2="792" y2="78" stroke="#2A3360"/>
+
+    <g class="scene">
+      <!-- wireframe -->
+      <path class="wire"    pathLength="1" d="M516 92 h260 v16 h-260 z"/>
+      <path class="wire w2" pathLength="1" d="M516 118 h124 v62 h-124 z"/>
+      <path class="wire w3" pathLength="1" d="M652 118 h124 v62 h-124 z"/>
+      <path class="wire w4" pathLength="1" d="M516 190 h260 v70 h-260 z"/>
+
+      <!-- headline metric -->
+      <g class="pop fb">
+        <text class="sans" x="528" y="152" font-size="24" font-weight="700" fill="#FFFFFF">+45%</text>
+        <text class="mono" x="528" y="170" font-size="9" fill="#8B93B8">flow completion</text>
+      </g>
+
+      <!-- sparkline -->
+      <path class="spark" pathLength="1" d="M664 166 l16 -6 l14 4 l16 -14 l14 6 l16 -18 l14 -8"/>
+
+      <!-- bars -->
+      <rect class="bar fb"    x="536" y="234" width="20" height="16" rx="3" fill="url(#bar)"/>
+      <rect class="bar b2 fb" x="574" y="226" width="20" height="24" rx="3" fill="url(#bar)"/>
+      <rect class="bar b3 fb" x="612" y="230" width="20" height="20" rx="3" fill="url(#bar)"/>
+      <rect class="bar b4 fb" x="650" y="218" width="20" height="32" rx="3" fill="url(#bar)"/>
+      <rect class="bar b5 fb" x="688" y="210" width="20" height="40" rx="3" fill="url(#bar)"/>
+      <rect class="bar b6 fb" x="726" y="200" width="20" height="50" rx="3" fill="#FDE047"/>
+
+      <!-- click ripple on the winning bar -->
+      <circle class="ripple fb" cx="736" cy="214" r="9" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+      <!-- cursor -->
+      <g>
+        <animateTransform attributeName="transform" type="translate" dur="12s" repeatCount="indefinite"
+          values="752,100; 560,140; 560,140; 716,150; 736,214; 736,214; 752,100"
+          keyTimes="0; 0.2; 0.3; 0.46; 0.66; 0.94; 1"
+          calcMode="spline" keySplines=".4 0 .2 1; .4 0 .2 1; .4 0 .2 1; .4 0 .2 1; .4 0 .2 1; .4 0 .2 1"/>
+        <path d="M0 0 L0 17 L4.6 12.8 L7.6 19.6 L10.4 18.4 L7.4 11.6 L13.4 11.4 Z" fill="#FFFFFF" stroke="#0B1020" stroke-width="1.2" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+</svg>
