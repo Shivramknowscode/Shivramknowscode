@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Shivramknowscode
+- 👋 Hi, I’m Shiv
 - 👀 I’m interested in Data Vizualization, xR and Product Management
 - 🌱 I’m currently learning Python, Java and Product Management Techniques.
 - 💞️ I’m looking to collaborate on any Bleeding Edge / Dataviz Projects.
