@@ -4,6 +4,8 @@
 
 **Product manager who designs. Designer who measures. Based in New York.**
 
+[Connect on LinkedIn](https://www.linkedin.com/in/shivrammahendran/)
+
 [Now](#now) &nbsp;·&nbsp; [Path](#path) &nbsp;·&nbsp; [Toolkit](#toolkit) &nbsp;·&nbsp; [Pick a door](#pick-a-door) &nbsp;·&nbsp; [Say hi](#say-hi)
 
 </div>
@@ -60,6 +62,8 @@ Tap a role to open it.
 | Domain | Healthcare SaaS, clinical trials, ePRO, eConsent, EDC, EMR/EHR |
 | AI | AI-native product development, agentic workflows, automation |
 
+<img src="./assets/dance.svg" alt="A stick figure dancing next to the caption: POV, the dashboard after we fixed the flow. Completion up 45%." width="100%">
+
 ## Pick a door
 
 Three doors. Open whichever one brought you here.
@@ -114,8 +118,8 @@ The best door. I built [How To Masala](https://howtomasala.com), which gives you
 
 <div align="center">
 
-[shiv.nyc](https://shiv.nyc) &nbsp;·&nbsp; [latice.design](https://latice.design) &nbsp;·&nbsp; [info@latice.design](mailto:info@latice.design)
+[LinkedIn](https://www.linkedin.com/in/shivrammahendran/) &nbsp;·&nbsp; [shiv.nyc](https://shiv.nyc) &nbsp;·&nbsp; [latice.design](https://latice.design) &nbsp;·&nbsp; [info@latice.design](mailto:info@latice.design)
 
-<sub>Mumbai, Milan, New York. The banner above is a hand-written animated SVG, no scripts.</sub>
+<sub>Mumbai, Milan, New York. Every animation on this page is a hand-written SVG, no scripts.</sub>
 
 </div>
